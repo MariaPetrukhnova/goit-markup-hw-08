@@ -1,0 +1,22 @@
+/* Import utils */
+
+@import './utils/variables';
+@import './utils/mixins';
+@import './utils/placeholders';
+@import './utils/normalize';
+@import './utils/base';
+
+/* Import components */
+@import './components/page-header';
+@import './components/logo';
+@import './components/hero';
+@import './components/buttons';
+@import './components/features';
+@import './components/worktypes';
+@import './components/team';
+@import './components/socials';
+@import './components/clients';
+@import './components/page-footer';
+@import './components/modal';
+@import './components/offer-form';
+@import './components/portfolio';

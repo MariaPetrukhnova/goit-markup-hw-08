@@ -1,0 +1,21 @@
+.logo {
+    @extend %link;
+    color: var(--accent-color);
+    font-family: Raleway, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.17;
+
+    &__span {
+        color: var(--black-color);
+    }
+
+    &__span--inverse {
+        color: var(--white-color);
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 26px;
+        line-height: 1.19;
+    }
+}

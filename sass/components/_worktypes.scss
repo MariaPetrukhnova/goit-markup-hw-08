@@ -1,0 +1,28 @@
+.worktypes {
+    &__list {
+        @extend %list;
+        @include flexed (flex-start, space-between);
+    }
+
+    &__item {
+        position: relative;
+    }
+
+    &__text {
+        position: absolute;
+        bottom: 0;
+        @include flexed (center, center);
+        width: 100%;
+        min-height: 70px;
+        padding: 8px;
+        font-weight: 700;
+        line-height: 1.14;
+        text-transform: uppercase;
+        color: var(--white-color);
+        background-color: var(--worktypes-bcg);
+    }
+
+    @media screen and (max-width: 1200px) {
+        display: none;
+    }
+}
