@@ -422,16 +422,18 @@
                     <textarea name="comment" id="offer-textarea" cols="30" rows="10" placeholder="Введіть текст"
                         class="offer-form__textarea"></textarea>
                 </label>
-                <label class="offer-form__checkbox-label">
-                    <input type="checkbox" name="accepting" value="accepting" class="offer-form__checkbox-input">
-                    Погоджуюся з розсилкою та приймаю&nbsp;<a class="offer-form__checkbox-link">Умови договору</a>
-                    <svg class="offer-form__checkbox-icon--unchecked" width="16" height="15">
-                        <use href="./images/symbol-defs.svg#check-border"></use>
-                    </svg>
-                    <svg class="offer-form__checkbox-icon--checked" width="16" height="15">
-                        <use href="./images/symbol-defs.svg#check"></use>
-                    </svg>
-                </label>
+                <div class="offer-form__checkbox-thumb">
+                    <label class="offer-form__checkbox-label">
+                        <input type="checkbox" name="accepting" value="accepting" class="offer-form__checkbox-input">
+                        <svg class="offer-form__checkbox-icon--unchecked" width="16" height="15">
+                            <use href="./images/symbol-defs.svg#check-border"></use>
+                        </svg>
+                        <svg class="offer-form__checkbox-icon--checked" width="16" height="15">
+                            <use href="./images/symbol-defs.svg#check"></use>
+                        </svg>
+                        <p>Погоджуюся з розсилкою та приймаю&nbsp;<a class="offer-form__checkbox-link">Умови договору</a></p>
+                    </label>
+                </div>
                 <button type="submit" class="btn offer-form__send-btn">Відправити</button>
             </form>
         </div>
