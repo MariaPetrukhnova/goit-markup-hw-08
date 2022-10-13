@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>goit-markup-hw-07</title>
+    <title>goit-markup-hw-08</title>
     <link rel="stylesheet" href="./css/main.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,29 +17,43 @@
     <header class="page-header">
         <div class="container page-header__container">
             <a href="./index.html" class="logo">Web<span class="logo__span">Studio</span></a>
-            <nav class="page-header__nav">
-                <ul class="page-header__nav-list">
-                    <li class="page-header__nav-item"><a href="./index.html" class="page-header__nav-link is-active">Студія</a></li>
-                    <li class="page-header__nav-item"><a href="./portfolio.html" class="page-header__nav-link">Портфоліо</a></li>
-                    <li class="page-header__nav-item"><a href="" class="page-header__nav-link">Контакти</a></li>
+            <button type="button" class="menu-button" aria-label="Перемикач мобільного меню" aria-expended="true" aria-controls="menu-container" data-menu-button>
+                <svg width="40" height="40" class="icon-thumb">
+                    <use href="./images/symbol-defs.svg#menu" class="icon-menu"></use>
+                    <use href="./images/symbol-defs.svg#close" class="icon-cross"></use>
+                </svg>
+            </button>
+            <div class="menu-container" id="menu-container" data-menu>
+                <nav class="page-header__nav">
+                    <ul class="page-header__nav-list">
+                        <li class="page-header__nav-item"><a href="./index.html" class="page-header__nav-link is-active">Студія</a></li>
+                        <li class="page-header__nav-item"><a href="./portfolio.html" class="page-header__nav-link">Портфоліо</a></li>
+                        <li class="page-header__nav-item"><a href="" class="page-header__nav-link">Контакти</a></li>
+                    </ul>
+                </nav>
+                <ul class="page-header__contacts">
+                    <li class="page-header__contacts-item">
+                        <a href="mailto:info@devstudio.com" class="page-header__contacts-link">
+                            <svg class="page-header__contacts-icon" width="16" height="12">
+                                <use href="./images/symbol-defs.svg#envelope"></use>
+                            </svg>
+                            info@devstudio.com</a>
+                    </li>
+                    <li class="page-header__contacts-item">
+                        <a href="tel:+380961111111" class="page-header__contacts-link">
+                            <svg class="page-header__contacts-icon" width="10" height="16">
+                                <use href="./images/symbol-defs.svg#smartphone"></use>
+                            </svg>
+                            +38 096 111 11 11</a>
+                    </li>
                 </ul>
-            </nav>
-            <ul class="page-header__contacts">
-                <li class="page-header__contacts-item">
-                    <a href="mailto:info@devstudio.com" class="page-header__contacts-link">
-                        <svg class="page-header__contacts-icon" width="16" height="12">
-                            <use href="./images/symbol-defs.svg#envelope"></use>
-                        </svg>
-                        info@devstudio.com</a>
-                </li>
-                <li class="page-header__contacts-item">
-                    <a href="tel:+380961111111" class="page-header__contacts-link">
-                        <svg class="page-header__contacts-icon" width="10" height="16">
-                            <use href="./images/symbol-defs.svg#smartphone"></use>
-                        </svg>
-                        +38 096 111 11 11</a>
-                </li>
-            </ul>
+                <ul class="page-header__social-bar">
+                    <li class="page-header__social-item"><a class="page-header__social-link" href="#">Instagram</a></li>
+                    <li class="page-header__social-item"><a class="page-header__social-link" href="#">Twitter</a></li>
+                    <li class="page-header__social-item"><a class="page-header__social-link" href="#">Facebook</a></li>
+                    <li class="page-header__social-item"><a class="page-header__social-link" href="#">LinkedIn</a></li>
+                </ul>
+            </div>
         </div>
     </header>
     <main>
@@ -439,6 +453,7 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu-mytry.js"></script>
 </body>
 
 </html>

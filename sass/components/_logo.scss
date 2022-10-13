@@ -19,3 +19,9 @@
         line-height: 1.19;
     }
 }
+
+.menu-opened .logo {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}
