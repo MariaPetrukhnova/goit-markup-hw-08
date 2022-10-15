@@ -390,7 +390,6 @@ body {
   color: var(--main-color);
   font-size: var(--main-font-size);
   letter-spacing: var(--main-letter-spacing);
-  height: 100%;
 }
 
 h1,
@@ -539,10 +538,12 @@ img {
 }
 .page-header__nav {
   margin-bottom: auto;
+  margin-top: -12px;
 }
 @media screen and (min-width: 768px) {
   .page-header__nav {
     margin-left: 92px;
+    margin-top: 0;
   }
 }
 @media screen and (min-width: 768px) {
@@ -717,7 +718,6 @@ img {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-top: 64px;
-  margin-bottom: -10px;
 }
 @media screen and (min-width: 768px) {
   .page-header__social-bar {
@@ -743,6 +743,15 @@ img {
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
+}
+
+@media screen and (max-width: 767px) {
+  .menu-opened .page-header {
+    position: fixed;
+    background-color: var(--white-color);
+    width: 100%;
+    z-index: 10;
+  }
 }
 
 .menu-button {
@@ -793,17 +802,9 @@ img {
   fill: var(--accent-color);
 }
 
-.menu-button.is-open {
-  position: sticky;
-  top: calc(0% + 10px);
-  right: calc(0% + 15px);
-  z-index: 100;
-}
-
 .menu-container {
-  min-height: 400px;
   background-color: var(--white-color);
-  padding: 48px 40px;
+  padding: 0 40px 48px 40px;
 }
 @media screen and (max-width: 767px) {
   .menu-container {
@@ -811,7 +812,6 @@ img {
     position: absolute;
     top: 100%;
     left: 0%;
-    width: 100%;
   }
   .menu-container.is-open {
     display: -webkit-box;
@@ -821,9 +821,9 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 100%;
+    height: calc(100% - 59px);
     position: fixed;
-    top: 0px;
+    top: 59px;
     left: 0;
     width: 100%;
     bottom: 0;

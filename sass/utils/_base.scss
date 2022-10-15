@@ -13,8 +13,13 @@ body {
     color: var(--main-color);
     font-size: var(--main-font-size);
     letter-spacing: var(--main-letter-spacing);
-    height: 100%;
 }
+
+// .menu-opened body {
+//     @media screen and (max-width: 767px) {
+//         overflow: hidden;
+//     }
+// } 
 
 h1,
 h2,
